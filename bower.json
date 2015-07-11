@@ -1,0 +1,7 @@
+{
+  "name": "geo-fire",
+  "private": true,
+  "dependencies": {
+    "firebase": "~2.2.7"
+  }
+}

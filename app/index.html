@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>geo fire</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+       <!-- MAP -->
+      <div id="map-canvas"></div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/firebase/firebase.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+          <script type="text/javascript" src="scripts/main-v2.js"></script>        
+        <!-- endbuild -->
+         <script type="text/javascript">
+          google.maps.event.addDomListener(window, "load", initializeMap);
+        </script>
+</body>
+</html>
