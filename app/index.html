@@ -13,6 +13,8 @@
     <!-- endbuild -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/animate.min.css">
+    <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -33,7 +35,11 @@
 
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-          <script type="text/javascript" src="scripts/main-v2.js"></script>        
+          <script type="text/javascript" src="scripts/rsvp.min.js"></script>
+          <script type="text/javascript" src="scripts/geofire.min.js"></script>
+          <script type="text/javascript" src="scripts/lodash.min.js"></script>
+          <script type="text/javascript" src="scripts/sfVehicles.js"></script>
+
         <!-- endbuild -->
          <script type="text/javascript">
           google.maps.event.addDomListener(window, "load", initializeMap);
